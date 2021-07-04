@@ -1,0 +1,39 @@
+.text-center-select{
+    background-color: #0090E7;
+    color:white;
+    padding: 6px 12px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    /* font-size: 20px; */
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    vertical-align: center;
+    justify-content: center;
+    text-align: center;    
+    white-space: nowrap;
+    line-height: 1;
+    font-size: 0.9375rem;
+}
+  /* .text-center-select .select-option{
+    padding: 30px; 
+    color: whitesmoke;
+    width: 50%;
+  } */
+
+.text-center-select:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+/* select {
+  width: 60px;
+  line-height: 1;
+  /* font-size: 0.9375rem; */
+  /* text-align: center;     */
+
+/* }  */
+.tech{
+    width: fit-content;
+}
