@@ -200,19 +200,19 @@ class Dashboard extends React.Component {
             console.log("lab-count:",e.target.value)
         }
         if(cl==="studSer"){
-            this.setState({astud:val , maxStud: parseInt(this.state.stud) + parseInt(val)},this.adjustments)
+            this.setState({astud:val },this.adjustments)
             console.log("student service:",e.target.value)
         }
         if(cl==="deptSer"){
-            this.setState({adept:val , maxDept: parseInt(this.state.dept) + parseInt(val)},this.adjustments)
+            this.setState({adept:val },this.adjustments)
             console.log("department service:",e.target.value)
         }
         if(cl==="colSer"){
-            this.setState({aclg:val , maxClg: parseInt(this.state.clg) + parseInt(val)},this.adjustments)
+            this.setState({aclg:val },this.adjustments)
             console.log("college service:",e.target.value)
         }
         if(cl==="perSer"){
-            this.setState({aper:val , maxPer: parseInt(this.state.per) + parseInt(val)},this.adjustments)
+            this.setState({aper:val },this.adjustments)
             console.log("student service:",e.target.value)
         }
         // changing adjustments value
