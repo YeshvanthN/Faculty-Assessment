@@ -7,6 +7,7 @@
   padding: 0;
   width: $sidebar-width-lg;
   z-index: 11;
+  // height: 100vh;
   transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;
   -webkit-transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;
   -moz-transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;
@@ -20,7 +21,7 @@
     background: $sidebar-bg;
     width: $sidebar-width-lg;
     height: $navbar-height;
-    @media (max-width: 991px) {
+    @media (max-width: 993px) {
       width: 55px;
     }
     .sidebar-brand {
@@ -30,6 +31,10 @@
       margin-right: 0;
       padding: 0rem 0rem 0rem 1.3rem;
       width: 100%;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+      text-align: justify;
 
       &:active,
       &:focus,
@@ -38,8 +43,8 @@
       }
 
       img {
-        width: calc(#{$sidebar-width-lg} - 120px );
-        max-width: 100%;
+        width: calc(#{$sidebar-width-lg} - 30px );
+        max-width: 28px;
         height: 28px;
         margin: auto;
         vertical-align: middle;
@@ -47,22 +52,29 @@
       &.brand-logo-mini {
         display: none;
         img {
-          width: calc(#{$sidebar-width-icon} - 50px );
-          max-width: 100%;
+          width: calc(#{$sidebar-width-icon} - 30px );
+          max-width: 28px;
           height: 28px;
           margin: auto;
+          vertical-align: middle;
         }
       }
     }
   }
-
+  .fixSide{
+    @media (min-width:993px) { 
+      padding-top: 0;
+      display: flex;
+      position: fixed;
+    }
+  }
   .nav {
-    overflow: hidden;
+    overflow: autos;
     flex-wrap: nowrap;
     flex-direction: column;
     margin-bottom: 60px;
     padding-top: $navbar-height;
-    @media (max-width:992px) {
+    @media (max-width:993px) {
       padding-top: 0;
     }
 
@@ -434,7 +446,7 @@
 }
 
 /* style for off-canvas menu*/
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 993px) {
   .sidebar-offcanvas {
     position: fixed;
     max-height: calc(100vh - #{$navbar-height});

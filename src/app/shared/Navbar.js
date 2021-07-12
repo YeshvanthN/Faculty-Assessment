@@ -14,21 +14,24 @@ class Navbar extends Component {
     return (
       <nav className="navbar p-0 fixed-top d-flex flex-row">
         <div className="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
-          <button className="navbar-toggler pl-5 d-lg-none align-self-center" type="button" onClick={this.toggleOffcanvas}>
+          <button className="navbar-toggler  d-lg-none align-self-center" type="button" onClick={this.toggleOffcanvas}>
             <span className="mdi text-white mdi-format-line-spacing"></span>
           </button>
-          {/* <Link className="navbar-brand brand-logo-mini" to="/"> */}
-          {/* <img className="img-xs rounded-circle" href="https://nptel.ac.in/content/college_assets/college_logo/2153_logo.jpg" alt="Logo" /> */}
-
-            {/* <img src="https://nptel.ac.in/content/college_assets/college_logo/2153_logo.jpg" alt="KSRM"/> */}
-          {/* </Link> */}
+          
+          {/* <Link className="navbar-brand brand-logo-mini" to="/">
+          <img className="img-xs rounded-circle" href="https://nptel.ac.in/content/college_assets/college_logo/2153_logo.jpg" alt="Logo" />
+            <span className="mdi"></span>
+            <img src="https://nptel.ac.in/content/college_assets/college_logo/2153_logo.jpg" alt="KSRM"/>
+          </Link> */}
         </div>
-        <div className="navbar-brand-wrapper ml-2 d-flex d-lg-none align-items-center justify-content-center">
-          <Link className="navbar-brand brand-logo-mini" to="/"><img src={require('../../assets/images/ksrm.png')} alt="logo" /></Link>
+        <div className="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-left">
+          <Link className="navbar-brand brand-logo-mini text-white" to="/"><img src={require('../../assets/images/ksrm.png')} alt="logo" />KSRM</Link>
         </div>
         <div className="navbar-menu-wrapper flex-grow d-flex align-items-stretch ">
           <button className="navbar-toggler align-self-center" type="button" onClick={ () => document.body.classList.toggle('sidebar-icon-only') }>
+            
             <span className="mdi text-white mdi-menu"></span>
+
           </button>
           {/* <ul className="navbar-nav w-100">
             <li className="nav-item w-100">

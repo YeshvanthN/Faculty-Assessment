@@ -635,6 +635,10 @@ export const OptionSet30 = [
 
 export const OptionSet31 = [
   {
+    label: 'Branch',
+    value: "",
+  },
+  {
     label: 'CSE',
     value: 'CSE'
   },
@@ -658,6 +662,10 @@ export const OptionSet31 = [
 
 export const OptionSet32 = [
   {
+    label: 'Section',
+    value: "",
+  },
+  {
     label: 'A',
     value: 'A'
   },
@@ -672,6 +680,10 @@ export const OptionSet32 = [
 ]
 
 export const OptionSet33 = [
+  {
+    label: 'Semester',
+    value: "",
+  },
   {
     label: 'First',
     value: 'First'

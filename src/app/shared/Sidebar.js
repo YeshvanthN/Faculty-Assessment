@@ -55,14 +55,20 @@ class Sidebar extends Component {
   render () {
     return (
       <nav className="sidebar sidebar-offcanvas" id="sidebar">
-          
-        <div className="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top" ></div>
+        <div className="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          {/* <a className="navbar-brand brand-logo-mini text-white" to="/"><img src={require('../../assets/images/ksrm.png')} alt="logo" />KSRM</a> */}
+          {/* <a className="navbar-brand brand-logo-mini text-white" to="/"><img src={require('../../assets/images/ksrm.png')} alt="logo" /></a> */}
+          <a className="sidebar-brand brand-logo text-white" href="/"><img src={require('../../assets/images/ksrm.png')} alt="logo" />KSRM</a>
+          <a className="sidebar-brand brand-logo-mini" href="/"><img src={require('../../assets/images/ksrm.png')} alt="logo" /></a>
+        </div>
+        <div className="fixSide">
         <ul className="nav">
           <li className="nav-item profile">
             <div className="profile-desc">
               <div className="profile-pic">
                 <div className="count-indicator">
-                  {/* <img className="img-xs rounded-circle " src={""} alt="" /> */}
+                  
+                  {/* <img className="img-xs rounded-circle " src={""} alt="hello" /> */}
                   <span className="menu-icon">
                     <i className="mdi mdi-account-circle"></i>
                   </span>
@@ -75,7 +81,7 @@ class Sidebar extends Component {
               </div>
               <Dropdown alignRight>
                 <Dropdown.Toggle as="a" className="cursor-pointer no-caret">
-                  <i className="mdi text-white mdi-dots-vertical"></i>
+                  <i className="mdi text-white mdi-dots-vertical ml-4"></i>
                 </Dropdown.Toggle>
                 <Dropdown.Menu className="sidebar-dropdown preview-list">
                   <a href="!#" className="dropdown-item preview-item" onClick={evt =>evt.preventDefault()}>
@@ -173,6 +179,7 @@ class Sidebar extends Component {
             </Collapse>
           </li>
         </ul>
+      </div>
       </nav>
     );
   }

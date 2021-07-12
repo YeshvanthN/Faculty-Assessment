@@ -260,7 +260,7 @@ export class StudentServices extends Component {
                         </div>
                     </div>
                     </div>
-                    <Save/>
+                    <Save url={'/studentsave'} state={this.state}/>
                 </div>
             </div>
         )

@@ -6,7 +6,7 @@
   -webkit-transition:left $action-transition-duration $action-transition-timing-function;
   -moz-transition:left $action-transition-duration $action-transition-timing-function;
   -ms-transition:left $action-transition-duration $action-transition-timing-function;
-  @media (max-width:992px) {
+  @media (max-width:993px) {
     left: 0;
   }
   .navbar-brand-wrapper {
@@ -17,7 +17,7 @@
     background: $navbar-bg;
     width: $sidebar-width-lg;
     height: $navbar-height;
-    @media (max-width: 991px) {
+    @media (max-width: 993px) {
       width: 55px;
     }
     .navbar-brand {
@@ -25,7 +25,7 @@
       font-size: 1.5rem;
       line-height: 48px;
       margin-right: 0;
-      padding: 0rem 0rem 0rem 1.3rem;
+      padding: 0rem 0rem 0rem 0rem;
       width: 100%;
 
       &:active,
@@ -66,7 +66,7 @@
     padding-right: 15px;
     width: 100%;
     height: $navbar-height;
-    @media (max-width: 991px) {
+    @media (max-width: 993px) {
       width: auto;
       padding-left: 15px;
       padding-right: 15px;
@@ -78,12 +78,12 @@
       @include border-radius(0px);
       &:not(.navbar-toggler-right) {
         font-size: 0.875rem;
-        @media (max-width: 991px) {
+        @media (max-width: 993px) {
           display: none;
         }
       }
       &.navbar-toggler-right{
-        @media (max-width:991px){
+        @media (max-width:993px){
           padding-left: 15px;
           padding-right: 11px;
           border-right: none;
@@ -249,7 +249,7 @@
               }
             }
           }
-          @media (max-width: 991px) {
+          @media (max-width: 993px) {
             position: static;
             .navbar-dropdown {
               margin-right: 20px;
@@ -310,14 +310,14 @@
         }
       }
       &.navbar-nav-right {
-        @media (min-width: 992px) {
+        @media (min-width: 993px) {
           margin-left: auto;
           .rtl & {
             margin-left: 0;
             margin-right: auto;
           }
         }
-        @media (max-width: 992px) {
+        @media (max-width: 993px) {
           margin-left: auto;
           .rtl & {
             margin-left: 0;
@@ -342,7 +342,7 @@
     }
   }
 }
-@media (max-width:991px) {
+@media (max-width:993px) {
   .navbar {
     flex-direction: row;
     .navbar-brand-wrapper {
@@ -365,7 +365,7 @@
 @media (max-width:480px) {
   .navbar {
     .navbar-brand-wrapper {
-      width: 55px;
+      width: px;
       .brand-logo-mini{
         padding-top: 0px;
       }
